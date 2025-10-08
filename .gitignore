@@ -1,0 +1,41 @@
+# Arquivos de dependências e cache do Gradle
+.gradle/
+build/
+
+# Arquivos de configuração local (NÃO ENVIAR!)
+# Contém informações sensíveis como o caminho do SDK e chaves de API
+local.properties
+
+# Arquivos de assinatura (NÃO ENVIAR!)
+*.keystore
+*.jks
+
+# Arquivos do Android Studio e IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+
+# Arquivos de build nativo (C/C++)
+.cxx/
+
+# Arquivos gerados (APKs, AABs, etc.)
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Arquivos de log
+*.log
+/logs
+/log
+
+# Outros
+captures/
+.DS_Store

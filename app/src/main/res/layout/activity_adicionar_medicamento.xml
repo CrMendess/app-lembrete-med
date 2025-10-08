@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AdicionarMedicamentoActivity">
+
+  <EditText
+      android:id="@+id/editTextNomeMedicamento"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Nome do Medicamento"
+      android:inputType="textCapWords"
+      android:minHeight="48dp"
+      android:autofillHints="name" />
+
+  <EditText
+      android:id="@+id/editTextDosagem"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:hint="Dosagem (ex: 1 comprimido)"
+      android:inputType="text"
+      android:minHeight="48dp"
+      android:autofillHints="" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Selecione o horário:"
+      android:layout_marginTop="16dp"/>
+
+  <TimePicker
+      android:id="@+id/timePicker"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:timePickerMode="spinner"/>
+
+  <Button
+      android:id="@+id/buttonSalvar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:text="Salvar Medicamento"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="8dp">
+
+    <Button
+        android:id="@+id/buttonExcluir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Excluir"
+        android:visibility="gone"
+        android:layout_marginEnd="4dp"
+        tools:visibility="visible"/>
+
+    <Button
+        android:id="@+id/buttonVoltar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Voltar"
+        android:layout_marginStart="4dp"/>
+  </LinearLayout>
+</LinearLayout>
+
